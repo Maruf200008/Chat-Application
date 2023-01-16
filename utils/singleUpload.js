@@ -32,7 +32,7 @@ const uploders = (subfolder_path, allow_file_type, file_size, error_message) => 
         if(allow_file_type.includes(file.mimetype)) {
             cb(null, true)
         } else {
-            cb(createError(error_msg))
+            cb(createError(error_message))
         }
 
     }
